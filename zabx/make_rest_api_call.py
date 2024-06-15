@@ -22,7 +22,7 @@ class MakeRestApiCall:
         self.url = config.get("url")
         self.verify = config.get("verify_ssl",False)
         if (not self.url.startswith("http://")) and (not self.url.startswith("https://")):
-            self.url = "https://"+self.url
+            self.url = "http://"+self.url
 
 
     def make_request(self, method, prms):

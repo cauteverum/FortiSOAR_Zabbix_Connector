@@ -117,7 +117,6 @@
       "is_config_required": true,
       "visible": true,
       "enabled": true,
-      "output_schema": {},
       "parameters": [
         {
           "name": "params",
@@ -130,7 +129,8 @@
           "isOnChange": false,
           "onchange": {}
         }
-      ]
+      ],
+      "output_schema": {}
     },
     {
       "operation": "get_host",
@@ -141,7 +141,6 @@
       "is_config_required": true,
       "visible": true,
       "enabled": true,
-      "output_schema": {},
       "parameters": [
         {
           "name": "params",
@@ -154,7 +153,8 @@
           "isOnChange": false,
           "onchange": {}
         }
-      ]
+      ],
+      "output_schema": {}
     },
     {
       "operation": "make_request",
@@ -165,7 +165,6 @@
       "is_config_required": true,
       "visible": true,
       "enabled": true,
-      "output_schema": {},
       "parameters": [
         {
           "name": "method",
@@ -189,7 +188,8 @@
           "isOnChange": false,
           "onchange": {}
         }
-      ]
+      ],
+      "output_schema": {}
     }
   ]
 }
