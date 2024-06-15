@@ -1,0 +1,195 @@
+{
+  "name": "zabx",
+  "label": "Zabx",
+  "version": "1.0.0",
+  "description": "Zabbix Connector For Community",
+  "publisher": "Community",
+  "cs_approved": false,
+  "cs_compatible": true,
+  "category": "",
+  "icon_small_name": "",
+  "icon_large_name": "zabbix_logo_icon_167937.png",
+  "help_online": "",
+  "configuration": {
+    "fields": [
+      {
+        "name": "url",
+        "title": "URL",
+        "type": "text",
+        "editable": true,
+        "visible": true,
+        "required": true,
+        "description": "url",
+        "isOnChange": false,
+        "onchange": {}
+      },
+      {
+        "name": "username",
+        "title": "Username",
+        "type": "text",
+        "editable": true,
+        "visible": true,
+        "required": true,
+        "description": "username",
+        "isOnChange": false,
+        "onchange": {}
+      },
+      {
+        "name": "password",
+        "title": "Password",
+        "type": "password",
+        "editable": true,
+        "visible": true,
+        "required": true,
+        "description": "password",
+        "isOnChange": false,
+        "onchange": {}
+      },
+      {
+        "name": "verify_ssl",
+        "title": "Verify SSL",
+        "type": "checkbox",
+        "editable": true,
+        "visible": true,
+        "required": false,
+        "value": false,
+        "description": "Verification",
+        "isOnChange": false,
+        "onchange": {}
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation": "get_events",
+      "title": "Get Events",
+      "annotation": "get_events",
+      "description": "descriptionTextField",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "parameters": [
+        {
+          "name": "params",
+          "title": "Params",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "description": "Params described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_groups",
+      "title": "Get Groups",
+      "annotation": "get_groups",
+      "description": "Get Groups",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "parameters": [
+        {
+          "name": "paarms",
+          "title": "Paarms",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "description": "Params described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        }
+      ],
+      "output_schema": {}
+    },
+    {
+      "operation": "get_trigger",
+      "title": "Get Trigger",
+      "annotation": "get_trigger",
+      "description": "Get triggers",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "output_schema": {},
+      "parameters": [
+        {
+          "name": "params",
+          "title": "Params",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "description": "Params described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        }
+      ]
+    },
+    {
+      "operation": "get_host",
+      "title": "Get Host",
+      "annotation": "get_host",
+      "description": "Get Hosts",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "output_schema": {},
+      "parameters": [
+        {
+          "name": "params",
+          "title": "Params",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": false,
+          "description": "Params described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        }
+      ]
+    },
+    {
+      "operation": "make_request",
+      "title": "Make Request",
+      "annotation": "make_request",
+      "description": "descriptionTextField",
+      "category": "investigation",
+      "is_config_required": true,
+      "visible": true,
+      "enabled": true,
+      "output_schema": {},
+      "parameters": [
+        {
+          "name": "method",
+          "title": "Method",
+          "type": "text",
+          "editable": true,
+          "visible": true,
+          "required": true,
+          "description": "Method described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        },
+        {
+          "name": "params",
+          "title": "Params",
+          "type": "json",
+          "editable": true,
+          "visible": true,
+          "required": true,
+          "description": "Params described in zabbix api reference",
+          "isOnChange": false,
+          "onchange": {}
+        }
+      ]
+    }
+  ]
+}
