@@ -7,7 +7,7 @@ def _check_health(config: dict) -> bool:
         prms = {}
         MK = MakeRestApiCall(config=config)
         response = MK.make_request(method=method, prms=prms)
-        if len(response) > 0:
+        if response.status_code == 200:
             return True
         else:
             return False
